@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* background image & center image */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0 ;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(bg01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media ( width >=500px ) {
+    body {
+        padding: 0;
+
+    }
+}
+
+.login-card  {
+    width: 100%;
+    margin-bottom: 5px;
+    max-width: 400px;
+    padding: 40px 30px 40px;
+    background: #ffffff;
+    text-align: center;
+}
+
+@media ( width >= 500px ) {
+    .login-card {
+        margin: 0;
+        width: 400px;
+    }
+}
+
+.login-card > h2 {
+    margin: 0 0 12px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.login-card > h3 {
+    margin: 0 0 35px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.login-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 15px;
+}
+
+.login-form > a {
+    color: #030179;
+}
+
+.login-form > input,
+.login-form > button {
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.login-form > input {
+    border: 2px solid #ebebeb;
+}
+
+.login-form > button {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+    height: 55px;
+    border: 0;
+    background: #216ce7;
+    color: #f3f3f3;
+    font-weight: 200;
+}
+
+
+    /* OR Divider     */
+
+.or-divider {
+    display: flex
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 2px 0;
+}    
+
+.or-divider ::before,
+.or-divider ::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.or-divider span {
+    padding: 0 5px;
+    font-size: 15px;
+    color: #777;
+}
+
+/* Social buttons */
+
+.social-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+.apple-btn {
+    background-color: #db9c9c;
+    color: rgb(0, 0, 0);
+}
+
+/* check box styling */
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+/* links */
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
